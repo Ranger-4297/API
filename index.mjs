@@ -33,9 +33,8 @@ app.get('/welcome', async (req, res) => {
     // Output
     const buffer = canvas.toBuffer('image/png')
     writeFileSync('./output/output.png', buffer)
-
-    res.set({ 'Content-Type': 'image/png' })//setting content type as png image!
-    res.send(canvas.toBuffer())//sending the image!
+    res.set({ 'Content-Type': 'image/png' })
+    res.send(canvas.toBuffer())
 })
 app.listen(
     PORT,
