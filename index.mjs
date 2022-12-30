@@ -17,15 +17,15 @@ app.get('/welcome', async (req, res) => {
 
     ctx.scale(2, 2)
     ctx.beginPath();
-    ctx.arc(canvas.width / 4, canvas.height / 5.5, 60, 0, 2 * Math.PI);
+    ctx.arc(canvas.width / 4, canvas.height / 6.5, 60, 0, 2 * Math.PI);
     ctx.lineWidth = 7;
     ctx.stroke();
 
     ctx.save();
     ctx.beginPath();
-    ctx.arc(canvas.width / 4, canvas.height / 5.5, 60, 0, 2 * Math.PI);
+    ctx.arc(canvas.width / 4, canvas.height / 6.5, 60, 0, 2 * Math.PI);
     ctx.clip();
-    ctx.drawImage(avatar, canvas.width / 4 - 60, canvas.height / 5.5 - 60, 128, 128);
+    ctx.drawImage(avatar, canvas.width / 4 - 60, canvas.height / 6.5 - 60, 128, 128);
     
     // Output
     const buffer = canvas.toBuffer('image/png')
