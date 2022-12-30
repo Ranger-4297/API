@@ -10,20 +10,31 @@ app.get('/welcome', async (req, res) => {
     const ctx = canvas.getContext('2d');
 
     // Background
-    const background = await loadImage('https://media.discordapp.net/attachments/913966196758564874/1058121547224731769/image.png');
+    const username = "example user example username"
+    const background = await loadImage(req.query.background);
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
-    // Avatar
-    const avatar = await loadImage('https://cdn.discordapp.com/avatars/765316548516380732/1ee9def1c460ef2e28f7572e4491dab4.png?size=256');
-
+    
+    // Username 
+    ctx.font = "30px Arial";
+    ctx.textAlign = 'center';
+    ctx.fillText(req.query.username, canvas.width / 2, canvas.height - 120);
+    
+    // Membercount
+    const membercount = "Member #13"
+    ctx.font = "30px Arial";
+    ctx.textAlign = 'center';
+    ctx.fillText(req.query.text, canvas.width / 2, canvas.height - 70);
+    
     // Border
     ctx.scale(2, 2)
     ctx.beginPath();
     ctx.arc(canvas.width / 4, canvas.height / 6.5, 60, 0, 2 * Math.PI);
     ctx.lineWidth = 7;
     ctx.stroke();
-
-    // PFP Display
+    
+    // Avatar
+    const avatar = await loadImage(req.query.avatar);
     ctx.save();
     ctx.beginPath();
     ctx.arc(canvas.width / 4, canvas.height / 6.5, 60, 0, 2 * Math.PI);
