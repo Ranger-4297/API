@@ -26,12 +26,12 @@ Available API('s) are;
 
 #### Params
 
-`background` => image link (attributed to the background of the card)
-`avatar` => image link (attributed to the avatar/profile picture of the card)
-`username` => string (attributed to the username text of the card)
-`text` => string (attributed to the bottom text of the card)
+`background` => image link (attributed to the background of the card)<br />
+`avatar` => image link (attributed to the avatar/profile picture of the card)<br />
+`username` => string (attributed to the username text of the card)<br />
+`text` => string (attributed to the bottom text of the card)<br />
 `color` => string (attributed to the accenting colour of text/profile border)
 
-Both `background` & `avatar` support PNG & JPG image extensions
-`username` & `text` must be properly URI encoded for special characters
+Both `background` & `avatar` support PNG & JPG image extensions<br />
+`username` & `text` must be properly URI encoded for special characters<br />
 `color` must be a URI encoded HEX or any other standard color type (NOT DECIMAL) 
