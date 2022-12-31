@@ -1,5 +1,5 @@
 
-<p align="center">
+<div align="center">
 
 <!-- PROJECT -->
 # API
@@ -7,7 +7,7 @@
 <!-- Badges -->
 ![Node version](https://img.shields.io/badge/node-v18.9.0-brightgreen)
 ![NPM version](https://img.shields.io/badge/npm-v8.19.1-blue)
-</p>
+</div>
 
 # Usage
 The API('s) here work solely through GET requests. They do not require authentication. The only requirement is you are able to fetch links.<br />
