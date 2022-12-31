@@ -1,4 +1,3 @@
-import { writeFileSync } from 'fs';
 import { createCanvas, loadImage } from 'canvas';
 import express from 'express';
 
