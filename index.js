@@ -8,7 +8,7 @@ app.get('/', function (req, res) {
     res.sendFile('index.html', { root: '.' });
 });
 
-app.get('/welcome', async (req, res) => {
+app.get('/API/welcome', async (req, res) => {
     const canvas = createCanvas(990, 450);
     const ctx = canvas.getContext('2d');
 
