@@ -16,7 +16,9 @@ The API('s) here work solely through GET requests. They do not require authentic
 This project is solely built in mind for use with the [YAGPDB](https://github.com/botlabs-gg/yagpdb) Discord bot. There is no guarantee it will work with any other project.<br />
 And there is no guarantee on uptime.
 
-The URI is requested in the following format: `http://rhykerw.com/API/`
+
+## URI
+The API('s) are requested in the following format: `http://rhykerw.com/API/`
 
 Available API('s) are;
 - [welcome](#Welcome)
