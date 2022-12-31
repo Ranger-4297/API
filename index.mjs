@@ -14,7 +14,6 @@ app.get('/welcome', async (req, res) => {
     const ctx = canvas.getContext('2d');
 
     // Background
-    const username = "example user example username"
     const background = await loadImage(req.query.background);
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
@@ -25,7 +24,6 @@ app.get('/welcome', async (req, res) => {
     ctx.fillText(req.query.username, canvas.width / 2, canvas.height - 120);
 
     // Membercount
-    const membercount = "Member #13"
     ctx.font = "30px Arial";
     ctx.textAlign = 'center';
     ctx.fillText(req.query.text, canvas.width / 2, canvas.height - 70);
@@ -46,8 +44,6 @@ app.get('/welcome', async (req, res) => {
     ctx.drawImage(avatar, canvas.width / 4 - 60, canvas.height / 6.5 - 60, 128, 128);
 
     // Output
-    const buffer = canvas.toBuffer('image/png')
-    writeFileSync('./output/output.png', buffer)
     res.set({ 'Content-Type': 'image/png' })
     res.send(canvas.toBuffer())
 })
