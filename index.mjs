@@ -17,15 +17,16 @@ app.get('/welcome', async (req, res) => {
     const background = await loadImage(req.query.background);
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
-
     // Username 
     ctx.font = "30px Arial";
     ctx.textAlign = 'center';
+    ctx.fillStyle = req.query.color;
     ctx.fillText(req.query.username, canvas.width / 2, canvas.height - 120);
 
     // Membercount
     ctx.font = "30px Arial";
     ctx.textAlign = 'center';
+    ctx.fillStyle = req.query.color;
     ctx.fillText(req.query.text, canvas.width / 2, canvas.height - 70);
 
     // Border
@@ -33,6 +34,7 @@ app.get('/welcome', async (req, res) => {
     ctx.beginPath();
     ctx.arc(canvas.width / 4, canvas.height / 6.5, 60, 0, 2 * Math.PI);
     ctx.lineWidth = 7;
+    ctx.strokeStyle = req.query.color;
     ctx.stroke();
 
     // Avatar
