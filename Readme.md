@@ -33,5 +33,5 @@ Available API('s) are;
 `color` => string (attributed to the accenting colour of text/profile border)
 
 Both `background` & `avatar` support PNG & JPG image extensions<br />
-`username` & `text` must be properly URI encoded for special characters<br />
-`color` must be a URI encoded HEX or any other standard color type (NOT DECIMAL) 
+Both `username` & `text` must be properly URI encoded for special characters<br />
+And `color` must be a URI encoded HEX or any other standard color type (NOT DECIMAL) 
