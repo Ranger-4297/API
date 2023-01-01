@@ -20,7 +20,7 @@ This project is solely built in mind for use with the [YAGPDB](https://github.co
 And there is no guarantee on uptime.
 
 ## URI
-The API('s) are requested in the following format: `http://rhykerw.com/API/`
+The API('s) are requested via the following format URI: `http://rhykerw.com/API/`
 
 Available API('s) are;
 - [welcome](#Welcome)
