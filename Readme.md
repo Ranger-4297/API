@@ -9,8 +9,7 @@
 ![NPM version](https://img.shields.io/badge/npm-v8.19.1-blue)
 </div>
 
-## NOTICE
-Once my own webpage is completed this project will be moved there. The system will remain the same and any requests through the same method.
+# Moved to [rhykerw.com](https://github.com/Ranger-4297/rhykerw.com)
 
 # Usage
 The API('s) here work solely through GET requests. They do not require authentication. The only requirement is you are able to fetch links.<br />
